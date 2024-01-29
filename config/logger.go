@@ -28,23 +28,23 @@ func NewLogger(p string) *Logger {
 }
 
 // Debug logs a message at level Debug on the standard logger.
-func (l *Logger) Debug (v ...interface{}) {
+func (l *Logger) Debug(v ...interface{}) {
 	l.debug.Println(v...)
 }
 
-func (l *Logger) Info (v ...interface{}) {
+func (l *Logger) Info(v ...interface{}) {
 	l.info.Println(v...)
 }
 
-func (l *Logger) Warn (v ...interface{}) {
+func (l *Logger) Warn(v ...interface{}) {
 	l.warning.Println(v...)
 }
 
-func (l *Logger) Error (v ...interface{}) {
+func (l *Logger) Error(v ...interface{}) {
 	l.err.Println(v...)
 }
 
-
+// Debugf logs a message at level Debug on the standard logger.
 func (l *Logger) Debugf(format string, v ...interface{}) {
 	l.debug.Printf(format, v...)
 }
