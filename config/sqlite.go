@@ -41,6 +41,7 @@ func InitializeSQLite() (*gorm.DB, error) {
 		logger.Errof("SQlite migration error: %v", err)
 		return nil, err
 	}
+	// Return the database
 	return db, nil
 
 }
